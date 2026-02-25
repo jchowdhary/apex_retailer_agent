@@ -1,0 +1,1 @@
+SOP-QA-001: Product Adverse Reaction Protocol. Action: If 2+ incidents in 48h, mark SKU 'Do Not Sell' and submit Level 1 Quality Alert.

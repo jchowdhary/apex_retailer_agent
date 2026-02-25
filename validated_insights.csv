@@ -1,0 +1,4 @@
+timestamp,insight,status
+2026-02-23 18:00:03.480740,"Anomaly Detected: 101 unauthorized discounts exceeding 15% were found across various locations. Examples include S006 (47.05%), S020 (41.94%), S021 (21.38%, 22.25%), and S024 (39.27%).
+Reason: These discounts are unauthorized as they surpass the allowed thresholds.
+Immediate Action (SOP-FIN-003, Section: Pricing and Discount Policy): Unauthorized discounts >15% require Regional Director approval and trigger a financial audit.",Validated

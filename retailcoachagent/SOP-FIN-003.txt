@@ -1,0 +1,1 @@
+SOP-FIN-003: Pricing and Discount Policy. Action: Unauthorized discounts >15% require Regional Director approval and trigger a financial audit.

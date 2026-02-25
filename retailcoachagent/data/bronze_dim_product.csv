@@ -1,0 +1,124 @@
+product_id,product_name,category,sub_category,price
+P028,Long-lasting Moisturizer,Skincare,Moisturizer,112.67
+P029,Glowing Rollerball,Fragrance,Rollerball,29.94
+P030,Repairing Conditioner,Haircare,Conditioner,18.35
+P031,Sheer Rollerball,Fragrance,Rollerball,37.12
+P032,Sheer Cleanser,Skincare,Cleanser,86.37
+P033,Glowing Lipstick,Makeup,Lipstick,99.59
+P034,Glowing Sunscreen,Skincare,Sunscreen,70.28
+P035,Sheer Cleanser,Skincare,Cleanser,104.32
+P036,Matte Foundation,Makeup,Foundation,111.95
+P037,Long-lasting Moisturizer,Skincare,Moisturizer,70.0
+P038,Sheer Sunscreen,Skincare,Sunscreen,31.46
+P039,Glowing Conditioner,Haircare,Conditioner,74.46
+P040,Volumizing Conditioner,Haircare,Conditioner,98.81
+P041,Repairing Mascara,Makeup,Mascara,124.48
+P042,Volumizing Body Mist,Fragrance,Body Mist,66.31
+P043,Hydrating Lipstick,Makeup,Lipstick,54.18
+P044,Matte Blush,Makeup,Blush,18.77
+P045,Hydrating Serum,Skincare,Serum,114.88
+P046,Volumizing Eau de Parfum,Fragrance,Eau de Parfum,43.47
+P047,Volumizing Conditioner,Haircare,Conditioner,32.16
+P048,Sheer Conditioner,Haircare,Conditioner,68.61
+P049,Hydrating Conditioner,Haircare,Conditioner,28.37
+P050,Repairing Hair Oil,Haircare,Hair Oil,61.99
+P051,Hydrating Moisturizer,Skincare,Moisturizer,61.08
+P052,Matte Eau de Parfum,Fragrance,Eau de Parfum,38.5
+P053,Repairing Conditioner,Haircare,Conditioner,37.63
+P054,Sheer Conditioner,Haircare,Conditioner,116.79
+P055,Hydrating Shampoo,Haircare,Shampoo,87.78
+P056,Sheer Moisturizer,Skincare,Moisturizer,108.81
+P057,Repairing Eyeshadow Palette,Makeup,Eyeshadow Palette,69.51
+P058,Matte Shampoo,Haircare,Shampoo,58.55
+P059,Sheer Hair Oil,Haircare,Hair Oil,102.01
+P060,Long-lasting Body Mist,Fragrance,Body Mist,120.43
+P061,Matte Conditioner,Haircare,Conditioner,49.75
+P062,Long-lasting Sunscreen,Skincare,Sunscreen,76.01
+P063,Hydrating Eau de Parfum,Fragrance,Eau de Parfum,80.51
+P064,Volumizing Foundation,Makeup,Foundation,26.57
+P065,Volumizing Foundation,Makeup,Foundation,25.27
+P066,Hydrating Eyeshadow Palette,Makeup,Eyeshadow Palette,118.75
+P067,Volumizing Blush,Makeup,Blush,22.25
+P068,Long-lasting Toner,Skincare,Toner,80.45
+P069,Matte Body Mist,Fragrance,Body Mist,89.66
+P070,Glowing Eau de Parfum,Fragrance,Eau de Parfum,60.35
+P071,Glowing Body Mist,Fragrance,Body Mist,117.4
+P072,Repairing Moisturizer,Skincare,Moisturizer,84.46
+P073,Volumizing Moisturizer,Skincare,Moisturizer,40.81
+P074,Glowing Eau de Parfum,Fragrance,Eau de Parfum,112.25
+P075,Glowing Mascara,Makeup,Mascara,34.88
+P076,Sheer Rollerball,Fragrance,Rollerball,87.98
+P077,Glowing Sunscreen,Skincare,Sunscreen,117.7
+P078,Glowing Serum,Skincare,Serum,30.35
+P079,Matte Sunscreen,Skincare,Sunscreen,47.14
+P080,Matte Mascara,Makeup,Mascara,91.56
+P081,Repairing Rollerball,Fragrance,Rollerball,44.87
+P082,Long-lasting Moisturizer,Skincare,Moisturizer,63.32
+P083,Hydrating Eau de Parfum,Fragrance,Eau de Parfum,53.69
+P084,Matte Mascara,Makeup,Mascara,97.31
+P085,Hydrating Shampoo,Haircare,Shampoo,26.05
+P086,Hydrating Blush,Makeup,Blush,107.3
+P087,Matte Eyeshadow Palette,Makeup,Eyeshadow Palette,22.48
+P088,Glowing Eau de Parfum,Fragrance,Eau de Parfum,40.48
+P089,Glowing Foundation,Makeup,Foundation,101.47
+P090,Matte Conditioner,Haircare,Conditioner,110.51
+P091,Hydrating Eyeshadow Palette,Makeup,Eyeshadow Palette,37.19
+P092,Sheer Body Mist,Fragrance,Body Mist,89.68
+P093,Matte Mascara,Makeup,Mascara,102.25
+P094,Sheer Toner,Skincare,Toner,22.14
+P095,Matte Conditioner,Haircare,Conditioner,105.37
+P096,Glowing Hair Oil,Haircare,Hair Oil,105.8
+P097,Hydrating Lipstick,Makeup,Lipstick,88.62
+P098,Glowing Hair Oil,Haircare,Hair Oil,110.49
+P099,Long-lasting Body Mist,Fragrance,Body Mist,72.51
+P100,Hydrating Eau de Parfum,Fragrance,Eau de Parfum,111.84
+P101,Volumizing Eau de Parfum,Fragrance,Eau de Parfum,120.99
+P102,Hydrating Eau de Parfum,Fragrance,Eau de Parfum,81.83
+P103,Sheer Rollerball,Fragrance,Rollerball,51.56
+P104,Volumizing Toner,Skincare,Toner,38.34
+P105,Hydrating Toner,Skincare,Toner,73.63
+P106,Repairing Mascara,Makeup,Mascara,25.49
+P107,Glowing Rollerball,Fragrance,Rollerball,88.98
+P108,Volumizing Cleanser,Skincare,Cleanser,51.09
+P109,Repairing Hair Oil,Haircare,Hair Oil,92.6
+P110,Repairing Lipstick,Makeup,Lipstick,89.15
+P111,Volumizing Conditioner,Haircare,Conditioner,78.89
+P112,Glowing Shampoo,Haircare,Shampoo,48.7
+P113,Repairing Hair Oil,Haircare,Hair Oil,65.27
+P114,Repairing Blush,Makeup,Blush,102.93
+P115,Glowing Foundation,Makeup,Foundation,73.15
+P116,Sheer Eau de Parfum,Fragrance,Eau de Parfum,119.86
+P117,Matte Mascara,Makeup,Mascara,104.3
+P118,Hydrating Foundation,Makeup,Foundation,44.2
+P119,Repairing Shampoo,Haircare,Shampoo,62.35
+P120,Repairing Eyeshadow Palette,Makeup,Eyeshadow Palette,60.76
+P121,Sheer Foundation,Makeup,Foundation,110.07
+P122,Matte Toner,Skincare,Toner,36.82
+P123,Volumizing Shampoo,Haircare,Shampoo,44.66
+P124,Matte Toner,Skincare,Toner,103.75
+P125,Volumizing Body Mist,Fragrance,Body Mist,105.21
+P126,Matte Styling Cream,Haircare,Styling Cream,97.57
+P127,Glowing Styling Cream,Haircare,Styling Cream,98.44
+P128,Repairing Rollerball,Fragrance,Rollerball,85.06
+P129,Hydrating Body Mist,Fragrance,Body Mist,94.35
+P130,Glowing Mascara,Makeup,Mascara,52.21
+P131,Matte Serum,Skincare,Serum,42.74
+P132,Hydrating Lipstick,Makeup,Lipstick,62.39
+P133,Repairing Rollerball,Fragrance,Rollerball,62.49
+P134,Repairing Eyeshadow Palette,Makeup,Eyeshadow Palette,114.82
+P135,Repairing Sunscreen,Skincare,Sunscreen,69.04
+P136,Sheer Body Mist,Fragrance,Body Mist,59.73
+P137,Repairing Conditioner,Haircare,Conditioner,41.48
+P138,Hydrating Styling Cream,Haircare,Styling Cream,59.61
+P139,Sheer Conditioner,Haircare,Conditioner,68.01
+P140,Volumizing Blush,Makeup,Blush,20.89
+P141,Hydrating Shampoo,Haircare,Shampoo,86.77
+P142,Matte Eyeshadow Palette,Makeup,Eyeshadow Palette,23.38
+P143,Matte Hair Oil,Haircare,Hair Oil,66.65
+P144,Glowing Body Mist,Fragrance,Body Mist,98.47
+P145,Sheer Hair Oil,Haircare,Hair Oil,26.76
+P146,Hydrating Sunscreen,Skincare,Sunscreen,124.99
+P147,Long-lasting Eau de Parfum,Fragrance,Eau de Parfum,25.34
+P148,Matte Moisturizer,Skincare,Moisturizer,39.33
+P149,Matte Sunscreen,Skincare,Sunscreen,43.52
+P150,Volumizing Shampoo,Haircare,Shampoo,119.41

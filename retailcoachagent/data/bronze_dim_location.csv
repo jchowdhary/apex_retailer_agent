@@ -1,0 +1,27 @@
+location_id,location_type,city,state,region
+L001_WEB,Web,N/A,N/A,Digital
+S001,Retail Store,North Judithbury,SC,Southeast
+S002,Retail Store,Lake Curtis,IN,Midwest
+S003,Retail Store,New Roberttown,WA,West
+S004,Retail Store,East William,CO,Southeast
+S005,Retail Store,Lake Debra,AK,Southwest
+S006,Retail Store,Robinsonshire,ND,Midwest
+S007,Retail Store,Port Lindachester,KY,Southeast
+S008,Retail Store,Ericmouth,MA,Northeast
+S009,Retail Store,South Colinstad,CT,Northeast
+S010,Retail Store,Lindsaymouth,PA,Northeast
+S011,Retail Store,South Christianport,ND,Midwest
+S012,Retail Store,Barbaraland,MP,Southeast
+S013,Retail Store,Port Keith,AZ,Southeast
+S014,Retail Store,Port Craig,CO,Southeast
+S015,Retail Store,Reidstad,KY,Southeast
+S016,Retail Store,Michaelview,GA,Southwest
+S017,Retail Store,New Cynthiaside,UT,Southeast
+S018,Retail Store,East Steven,VA,Southeast
+S019,Retail Store,Lake Mark,KY,Southwest
+S020,Retail Store,East Lydiamouth,WI,Midwest
+S021,Retail Store,Carlshire,MO,Midwest
+S022,Retail Store,Jasonfort,FM,Southeast
+S023,Retail Store,Thomasberg,MO,Midwest
+S024,Retail Store,Juliechester,IA,Midwest
+S025,Retail Store,Coxberg,MH,Southeast

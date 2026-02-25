@@ -1,0 +1,1 @@
+SOP-OPS-004: Inventory OSA Protocol. Action: If Top 20 SKU is empty, perform backroom check and adjust system inventory to ZERO.

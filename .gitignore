@@ -1,0 +1,5 @@
+.adk
+retailcoachagent/.adk
+retailcoachagent/__pycache__
+retailcoachagent/.env
+validated_insights.csv
