@@ -1,6 +1,6 @@
-# Retail Coach Agent
+# Retail Coach Agent - ADK Implementation
 
-An intelligent AI agent designed to help retail operations teams identify anomalies, audit compliance violations, and make data-driven operational decisions. The agent uses Google's Agent Development Kit (ADK) to provide real-time insights into retail sales data and operational procedures.
+An intelligent AI agent designed to help retail operations teams identify anomalies, audit compliance violations, and make data-driven operational decisions. This is the ADK (Agent Development Kit) implementation of the Retail Coach Agent.
 
 ## 🎯 Project Goal
 
@@ -12,20 +12,29 @@ The Retail Coach Agent leverages advanced LLM capabilities to:
 
 The agent acts as a compliance auditor and operational coach, helping retail teams maintain standards while optimizing performance.
 
-## 📁 Project Structure
+## 📁 Directory Structure
 
 ```
-adk-starter-pack/
-├── retailcoachagent/              # Main retail coach agent
-│   ├── agent.py                   # Agent logic with operational tools
-│   ├── gold_daily_performance.csv # Aggregated daily performance metrics
-│   ├── fact_enriched.csv          # Detailed transaction data with enrichment
-│   ├── validated_insights.csv     # Validated operational insights
-│   ├── SOP-*.txt                  # Standard Operating Procedures
-│   └── data_engineering.ipynb     # Data pipeline notebook
-├── adkretailagent/                # Alternative agent implementation
-├── adk-a2a-backup/                # A2A protocol agent reference
-└── adksample/                     # Sample ADK project structure
+adkretailagent/
+├── README.md                      # This file
+├── validated_insights.csv         # Validated operational insights
+├── .git/                          # Git repository
+├── .gitignore                     # Git ignore rules
+└── retailcoachagent/              # Main agent package
+    ├── __init__.py
+    ├── agent.py                   # Agent logic with operational tools
+    ├── data_engineering.ipynb     # Data pipeline notebook
+    ├── gold_daily_performance.csv # Aggregated daily performance metrics
+    ├── fact_enriched.csv          # Detailed transaction data with enrichment
+    ├── validated_insights.csv     # Validated operational insights
+    ├── SOP-FIN-003.txt            # Financial & Discount Policy SOP
+    ├── SOP-LOG-002.txt            # Logistics SOP
+    ├── SOP-OPS-004.txt            # Operations SOP
+    ├── SOP-QA-001.txt             # Quality Assurance SOP
+    └── data/                      # Raw data directory
+        ├── bronze_dim_location.csv
+        ├── bronze_dim_product.csv
+        └── bronze_fact_sales.csv
 ```
 
 ## 🛠️ Key Components
@@ -63,61 +72,52 @@ Before you begin, ensure you have:
 - **Python 3.10+**: Runtime environment
 - **uv**: Python package manager - [Install](https://docs.astral.sh/uv/getting-started/installation/)
 - **Google Cloud SDK**: For GCP services - [Install](https://cloud.google.com/sdk/docs/install)
-- **make**: Build automation tool (pre-installed on Unix-based systems)
-
-### Python Dependencies
-
-The project uses the following key dependencies:
-- `google-adk`: Google Agent Development Kit
-- `google-cloud-aiplatform`: For agent deployment and evaluation
-- `pandas`: Data processing and analysis
-- `pytest`: Testing framework
+- **pandas**: Data processing library
+- **google-adk**: Google Agent Development Kit
 
 ## 🚀 Quick Start
 
-### 1. Install Dependencies
+### 1. Navigate to This Directory
 
 ```bash
-cd /home/jayant/adk-starter-pack
-make install
+cd adkretailagent
 ```
 
-Or manually with uv:
+### 2. Install Dependencies
+
+If using uv:
 ```bash
 uv install
 ```
 
-### 2. Set Up Google Cloud
+Or with pip:
+```bash
+pip install -r requirements.txt
+```
 
-Authenticate with Google Cloud:
+### 3. Set Up Google Cloud Authentication
+
 ```bash
 gcloud auth login
 gcloud config set project YOUR_PROJECT_ID
 ```
 
-### 3. Run the Agent Locally
+### 4. Run the Agent
 
 ```bash
-make playground
+python -m retailcoachagent.agent
 ```
 
-This launches an interactive development environment where you can test the agent in real-time with auto-reload on code changes.
+Or with uv:
+```bash
+uv run python -m retailcoachagent.agent
+```
 
-### 4. Run Tests
+### 5. Test the Agent
 
 ```bash
-make test
+python -m pytest tests/ -v
 ```
-
-Runs unit and integration tests to verify agent functionality.
-
-### 5. Run Evaluations
-
-```bash
-make eval
-```
-
-Evaluates agent performance against predefined evalsets.
 
 ## 📊 Working with Data
 
@@ -130,15 +130,15 @@ jupyter notebook retailcoachagent/data_engineering.ipynb
 
 ### Data Flow
 1. **Bronze Layer**: Raw data ingestion
-   - `data/bronze_dim_location.csv`
-   - `data/bronze_dim_product.csv`
-   - `data/bronze_fact_sales.csv`
+   - `retailcoachagent/data/bronze_dim_location.csv`
+   - `retailcoachagent/data/bronze_dim_product.csv`
+   - `retailcoachagent/data/bronze_fact_sales.csv`
 
 2. **Gold Layer**: Aggregated performance metrics
-   - `gold_daily_performance.csv` - Daily KPIs
+   - `retailcoachagent/gold_daily_performance.csv` - Daily KPIs
 
 3. **Enriched**: Detailed transaction data
-   - `fact_enriched.csv` - Enhanced with context
+   - `retailcoachagent/fact_enriched.csv` - Enhanced with context
 
 ## 🔍 Example Usage
 
@@ -160,95 +160,69 @@ User: "Tell me about returns at location 42 on 2024-01-15"
 Agent: Uses Tool B → Loads transaction details → Uses Tool C to reference SOP → Provides analysis
 ```
 
-## 📝 Commands Reference
-
-| Command | Description |
-|---------|-------------|
-| `make install` | Install all dependencies using uv |
-| `make playground` | Launch interactive development environment |
-| `make test` | Run unit and integration tests |
-| `make eval` | Run evaluation against evalsets |
-| `make lint` | Run code quality checks (ruff) |
-| `make deploy` | Deploy agent to Google Agent Engine |
-| `make inspector` | Launch A2A Protocol Inspector |
-
-For full details, see the [Makefile](adk-a2a-backup/Makefile).
-
 ## 🧪 Testing
 
-### Unit Tests
+### Run All Tests
 ```bash
-pytest tests/unit/ -v
+pytest -v
 ```
 
-### Integration Tests
+### Run Specific Test File
 ```bash
-pytest tests/integration/ -v
+pytest retailcoachagent/tests/test_agent.py -v
 ```
 
-### All Tests
+### Run with Coverage
 ```bash
-make test
+pytest --cov=retailcoachagent tests/
 ```
 
 ## 🔧 Development Workflow
 
 1. **Edit agent logic** in `retailcoachagent/agent.py`
-2. **Test interactively** with `make playground` (auto-reloads on save)
-3. **Run tests** with `make test`
-4. **Evaluate** with `make eval`
-5. **Deploy** when ready with `make deploy`
+2. **Test locally** with `python -m retailcoachagent.agent`
+3. **Run tests** with `pytest -v`
+4. **Update data** by refreshing CSV files in `retailcoachagent/`
+5. **Iterate** based on results
 
-## 🚢 Deployment
+## � Adding New Tools
 
-### Deploy to Google Agent Engine
+To add a new tool to the agent:
 
-```bash
-gcloud config set project YOUR_PROJECT_ID
-make deploy
+1. Create a function in `retailcoachagent/agent.py`:
+```python
+def tool_new_feature():
+    """Your tool description"""
+    # Implementation here
+    return result
 ```
 
-### Register with Gemini Enterprise (Optional)
+2. Register it with the agent in the same file
 
-```bash
-make register-gemini-enterprise
-```
+3. Add tests in the appropriate test directory
 
-## 📚 Documentation
-
-- **ADK Cheatsheet**: [Agent definitions, tools, callbacks](https://raw.githubusercontent.com/GoogleCloudPlatform/agent-starter-pack/refs/heads/main/agent_starter_pack/resources/docs/adk-cheatsheet.md)
-- **Evaluation Guide**: [Eval config, metrics, best practices](https://raw.githubusercontent.com/GoogleCloudPlatform/agent-starter-pack/refs/heads/main/agent_starter_pack/resources/docs/adk-eval-guide.md)
-- **Deployment Guide**: [Infrastructure, CI/CD setup](https://raw.githubusercontent.com/GoogleCloudPlatform/agent-starter-pack/refs/heads/main/agent_starter_pack/resources/docs/adk-deploy-guide.md)
-- **ADK Documentation**: [Full API reference](https://google.github.io/adk-docs/llms.txt)
-
-## 🤝 Contributing
-
-1. Create a new branch for features/fixes
-2. Make changes in `retailcoachagent/agent.py`
-3. Add tests in `tests/`
-4. Run `make lint` to check code quality
-5. Run `make test` to verify functionality
-6. Submit pull request
+4. Update this README with the new tool documentation
 
 ## 📊 Project Statistics
 
 - **Agent Model**: Gemini 2.5 Flash
 - **Python Version**: 3.10+
-- **Main Dependencies**: google-adk, google-cloud-aiplatform, pandas
-- **Test Framework**: pytest with asyncio support
+- **Main Package**: `retailcoachagent`
+- **Entry Point**: `retailcoachagent.agent`
 
 ## 🐛 Troubleshooting
 
 ### Import Errors
 ```bash
-# Ensure dependencies are installed
-make install
+# Reinstall dependencies
+uv install --refresh
 ```
 
 ### Data File Not Found
 ```bash
-# Verify you're running from project root
-cd /home/jayant/adk-starter-pack
+# Ensure you're in the correct directory
+pwd
+# Should show: /path/to/adkretailagent
 ```
 
 ### GCP Authentication Issues
@@ -257,22 +231,23 @@ gcloud auth login
 gcloud auth application-default login
 ```
 
-### Port Already in Use (Playground)
-Change the port in your make command:
+### Python Version Issues
+Check your Python version:
 ```bash
-PORT=8001 make playground
+python --version
+# Should be 3.10 or higher
 ```
 
 ## 📞 Support
 
 For issues or questions:
-1. Check the [ADK documentation](https://google.github.io/adk-docs/)
-2. Review the [GEMINI.md](adk-a2a-backup/GEMINI.md) for AI-assisted debugging
-3. Run `make playground` for interactive testing
+1. Review the agent code in `retailcoachagent/agent.py`
+2. Check test files for usage examples
+3. Review the data engineering notebook for data insights
 
 ## 📄 License
 
-This project follows the licensing guidelines of the Google Cloud Platform Agent Starter Pack.
+This project is part of the ADK (Agent Development Kit) ecosystem.
 
 ---
 
